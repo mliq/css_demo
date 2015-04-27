@@ -1,0 +1,35 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    display: block;
+    float: left;
+    margin: 0 20px 0 10px;
+}
+
+div:hover {
+    width: 100px;
+    height: 100px;
+    background-color: #0f0;
+    display: block;
+    float: left;
+    margin: 0 20px 0 10px;
+}
+
+div:active {
+    width: 100px;
+    height: 100px;
+    background-color: #00f;
+    display: block;
+    float: left;
+    margin: 0 20px 0 10px;
+}
+
+/**/
+p, div {
+    color: #00f;
+}
+
+p {
+    color: #0f0;
+}
