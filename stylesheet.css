@@ -1,13 +1,19 @@
-div {
+/* Starting on 2nd child, each 3.*/
+li:nth-child(3n+2){
+    background-color: orangered;
+}
+
+/*set divs that are children of divs to inline-block*/
+div div {
     width: 100px;
     height: 100px;
     background-color: #f00;
-    display: block;
+    display: inline-block;
     float: left;
     margin: 0 20px 0 10px;
 }
 
-div:hover {
+div div:hover {
     width: 100px;
     height: 100px;
     background-color: #0f0;
@@ -16,7 +22,7 @@ div:hover {
     margin: 0 20px 0 10px;
 }
 
-div:active {
+div div:active {
     width: 100px;
     height: 100px;
     background-color: #00f;
@@ -25,11 +31,14 @@ div:active {
     margin: 0 20px 0 10px;
 }
 
-/**/
-p, div {
-    color: #00f;
+#parentDiv div:nth-child(even){
+    background-color: orangered;
 }
 
-p {
-    color: #0f0;
-}
+/*p, div {*/
+    /*color: #00f;*/
+/*}*/
+
+/*p {*/
+    /*color: #0f0;*/
+/*}*/
